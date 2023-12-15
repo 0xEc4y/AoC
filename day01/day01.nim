@@ -60,12 +60,12 @@ proc parseByLinePT1(input: string): string =
 
 when isMainModule:
   let contents = newFileStream("input.txt", fmRead)
-  var newLine = ""
+  var inputLine = ""
 
   if not isNil(contents):
     # comments are numbering loop for debugging
     #var i = 0
-    while contents.readLine(newLine):
+    while contents.readLine(inputLine):
       #if i < 10:
       discard parseByLinePT1(newLine)
       stdout.write &"{newLine}\ttotal: {total}\n"
