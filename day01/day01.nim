@@ -61,8 +61,6 @@ proc parseByLinePT1(input: string): string =
 when isMainModule:
   let contents = newFileStream("input.txt", fmRead)
   var newLine = ""
-  # loop entire file string, parse function finds first and last int in line,
-  # and combines into two-digit int
 
   if not isNil(contents):
     # comments are numbering loop for debugging
