@@ -67,8 +67,8 @@ when isMainModule:
     #var i = 0
     while contents.readLine(inputLine):
       #if i < 10:
-      discard parseByLinePT1(newLine)
-      stdout.write &"{newLine}\ttotal: {total}\n"
+      discard parseByLinePT1(inputLine)
+      stdout.write &"{inputLine}\ttotal: {total}\n"
       #else:
       #  quit()
       #i.inc
